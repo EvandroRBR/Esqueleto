@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Esqueleto",
+    "description": "Documentação esqueleto",
+    "version": "1.0.0",
+    "contact": {
+      "email": "evandro.rmbraga@gmail.com"
+    }
+  },
+
+  "paths": {
+    "/": {
+      "get": {
+        "tags": ["Esqueleto"],
+        "summary": "Teste de servidor",
+        "description": "Teste de servidor",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
